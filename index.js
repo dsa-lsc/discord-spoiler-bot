@@ -5,4 +5,11 @@
  * @license MIT
  */
 
-module.exports = require('./src/SpoilerBot');
+const SpoilerBot = require('discord-spoiler-bot');
+
+let config = {
+  token: process.env.DISCORD_SECRET,
+};
+
+let bot = new SpoilerBot(config);
+bot.connect();
