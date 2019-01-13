@@ -5,7 +5,7 @@
  * @license MIT
  */
 
-const SpoilerBot = require('discord-spoiler-bot');
+const SpoilerBot = require('./src/SpoilerBot');
 
 let config = {
   token: process.env.DISCORD_SECRET,
